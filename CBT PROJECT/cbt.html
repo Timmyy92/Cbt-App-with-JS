@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./cbt.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<title>CBT PROJECT</title>
+	</head>
+
+	<body>
+		<div class="start-box">
+			<img src="./14482-welcome-onboard.gif" alt="" width="400px" />
+			<button onclick="startQuiz()" class="btn btn-danger mx-5" id="start_btn">
+				START
+			</button>
+		</div>
+		<div class="info-page">
+			<h1>Answer all questions correctly</h1>
+			<div class="w-100 d-flex justify-content-between">
+				<button onclick="contQuiz()" class="btn btn-danger mx-auto mt-5">
+					CONTINUE
+				</button>
+			</div>
+		</div>
+
+		<div class="div1">
+			<div id="timer">
+				<span id="min">00</span>
+				<span>:</span>
+				<span id="sec">00</span>
+			</div>
+			<div class="question">
+				<!-- <h3>1. Who is the president of Nigeria?</h3> -->
+			</div>
+			<div class="option"></div>
+			<div class="option"></div>
+			<div class="option"></div>
+			<div class="option"></div>
+
+			<div class="button">
+				<button class="btn btn-danger" id="prev" onclick="prev()">PREV</button>
+				<button class="btn btn-primary" onclick="submit()">SUBMIT</button>
+				<button class="btn btn-secondary" id="next" onclick="next()">
+					NEXT
+				</button>
+			</div>
+		</div>
+		<div class="Resultpage">
+			<!-- <p>You have completed the quiz.</p>
+        <p>Your score is <span>20</span></p>  -->
+		</div>
+		<!-- <img src="./64248-checkmark.gif" alt="" width="200px">
+    <img src="./76705-error-animation.gif" alt="" width="200px"> -->
+	</body>
+</html>
+<script src="./cbt.js"></script>
